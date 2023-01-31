@@ -9,7 +9,7 @@ export default function Home() {
   async function onSubmit(event) {
     event.preventDefault();
     try {
-      const response = await fetch("/api/generate", {
+      const response = await fetch("https://issue-classifier-backend-danhm3epmq-uc.a.run.app", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
