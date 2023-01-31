@@ -1,4 +1,4 @@
-import { Configuration, OpenAIApi } from "openai";
+const { Configuration, OpenAIApi } = require("openai");
 
 const getPrompt = (promptName, inquiry) => {
   switch (promptName) {
@@ -60,7 +60,6 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 export default async function generateResponse(req, res) {
-  console.log('here')
   if (!configuration.apiKey) {
     res.status(500).json({
       error: {
