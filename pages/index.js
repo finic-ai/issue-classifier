@@ -35,11 +35,10 @@ export default function Home() {
     <div>
       <Head>
         <title>Buff Customer Support Demo</title>
-        <link rel="icon" href="/logo.png" />
       </Head>
 
       <main className={styles.main}>
-        <img src="/logo.png" className={styles.icon} />
+        <h1>🦾</h1>
         <h3>Welcome to Home Depot, what is your issue?</h3>
         <form onSubmit={onSubmit}>
           <input
